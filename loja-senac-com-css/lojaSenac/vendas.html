@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+    input, select{
+        padding: 0.6rem 0;
+        margin: 0.325rem 0 1rem;
+        padding-left: 0.5rem;
+    }
+    button{
+        background: #FF0000;
+        border: 1px solid #FF0000;
+        color: white;
+        padding: 1rem 0;
+        margin: 0.325rem 0 1rem;
+        cursor: pointer;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="ctrl-estoque.html">Controle de Estoque</a></li>
+                <li><a href="add-produto.html">Adicionar Produto</a></li>
+                <li><a href="funcionarios.html">Funcionários</a></li>
+                <li><a href="historico.html">Historico</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Pagina de Vendas</h2>
+
+            <form action="#">
+
+                <label for="produto">Selecione o produto que você escolheu:</label>
+                <select name="produto" id="">
+                    <option value="caixa de ferramenta">Caixa de Ferramentas</option>
+                    <option value="braço">braço</option>
+                    <option value="mangá">mangá</option>
+                    <option value="revista">revista do batman</option>
+                    <option value="uranio">uranio</option>
+                </select>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" name="quantidade">
+
+                <label for="frete">Digite seu Cep:</label>
+                <input type="number" name="quantidade">
+
+                <label for="pagamento">Forma de Pamento:</label>
+                <select name="pagamento" id="">
+                    <option value="cartao">Cartão de Credito</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="boleto">Boleto</option>
+                    <option value="pix">Pix</option>
+                </select>
+                
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Siga-nos nas redes sociais!</p>
+        <div>
+            <img src="tiktok.jfif"/>
+            <img src="instagram.jfif"/>
+            <img src="twitter.jfif"/>
+        </div>
+    </footer>
+</body>
+</html>
